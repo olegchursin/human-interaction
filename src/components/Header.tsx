@@ -1,8 +1,6 @@
-import { Link } from 'gatsby';
-import PropTypes from 'prop-types';
-import React from 'react';
-
 import logo from '../images/human-interaction-logo.svg';
+import { Link } from 'gatsby';
+import React from 'react';
 
 const styles = {
   logo: {
@@ -19,7 +17,7 @@ const styles = {
   }
 };
 
-const Header = () => (
+const Header: React.FC = () => (
   <header style={styles.wrapper}>
     <div style={styles.logoWrapper}>
       <Link to="/">
@@ -28,13 +26,5 @@ const Header = () => (
     </div>
   </header>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-};
-
-Header.defaultProps = {
-  siteTitle: ``
-};
 
 export default Header;

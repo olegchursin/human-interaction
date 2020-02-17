@@ -22,7 +22,7 @@ const styles = {
   }
 };
 
-const Layout = ({ children }) => (
+const Layout: React.FC = ({ children }) => (
   <div style={styles.wrapper}>
     <div>
       <Header />

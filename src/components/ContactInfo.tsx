@@ -7,7 +7,7 @@ const styles = {
   }
 };
 
-const ContactInfo = () => {
+const ContactInfo: React.FC = () => {
   return (
     <>
       <h3 style={styles.title}>Contact</h3>

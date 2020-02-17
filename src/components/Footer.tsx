@@ -14,7 +14,7 @@ const styles = {
   }
 };
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer style={styles.footerWrapper}>
       <div style={styles.footerContent}>

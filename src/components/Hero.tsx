@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 const styles = {
   wrapper: {
@@ -11,7 +11,11 @@ const styles = {
   }
 };
 
-const Hero = ({ content }) => {
+interface IHero {
+  readonly content: string;
+}
+
+const Hero: React.FC<IHero> = ({ content }) => {
   return <div style={styles.wrapper}>{content}</div>;
 };
 

@@ -1,18 +1,19 @@
-import React from "react"
-import ServiceCard from "./ServiceCard"
-import { content } from "../content/content"
+import ServiceCard from './ServiceCard';
+import { content } from '../content/content';
+import { IStyleMap } from '../utils/types';
+import React from 'react';
 
-const servicesContent = Object.values(content.services)
+const servicesContent = Object.values(content.services);
 
-const styles = {
+const styles: IStyleMap = {
   title: {
-    color: "#767676",
+    color: '#767676'
   },
   serviceCards: {
-    display: "flex",
-    flexWrap: "wrap",
-  },
-}
+    display: 'flex',
+    flexWrap: 'wrap'
+  }
+};
 
 const Services = () => {
   return (
@@ -26,11 +27,11 @@ const Services = () => {
               title={service.title}
               content={service.content}
             />
-          )
+          );
         })}
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
