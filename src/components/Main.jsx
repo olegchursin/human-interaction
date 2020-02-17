@@ -1,8 +1,8 @@
-import React from "react"
-import ContactInfo from "./ContactInfo"
-import Services from "./Services"
-import Hero from "./Hero"
-import { content } from "../content/content"
+import React from 'react';
+import ContactInfo from './ContactInfo';
+import Services from './Services';
+import Hero from './Hero';
+import { content } from '../content/content';
 
 const Main = () => {
   return (
@@ -11,7 +11,7 @@ const Main = () => {
       <Services />
       <ContactInfo />
     </>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;

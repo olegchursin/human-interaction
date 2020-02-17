@@ -1,14 +1,8 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Main from "../components/Main"
-
-const styles = {
-  main: {
-    marginTop: `8vh`,
-  },
-}
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Main from '../components/Main';
 
 const IndexPage = () => (
   <Layout>
@@ -16,10 +10,8 @@ const IndexPage = () => (
       title="Human Interaction"
       keywords={[`Human Interaction`, `UI/UX`, `web development`, `web design`]}
     />
-    <div style={styles.main}>
-      <Main />
-    </div>
+    <Main />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
